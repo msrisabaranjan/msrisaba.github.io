@@ -297,8 +297,21 @@ a, a:visited {
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
+a:hover, a:focus { color: #C3A1A0; }
 p a, p a:visited { line-height: inherit; }
+
+a1, a1:visited {
+   text-decoration: none;
+   outline: 0;
+   color: #fff;
+
+   -webkit-transition: color .3s ease-in-out;
+   -moz-transition: color .3s ease-in-out;
+   -o-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+}
+a1:hover, a1:focus { color: #11ABB0; }
+p1 a1, p1 a1:visited { line-height: inherit; }
 
 
 /*  4. List  --------------------------------------------------------- */
@@ -466,6 +479,8 @@ img.resize {
    max-width:60%;
    max-height:auto;
    float: left;
+   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 5px;
  }
  
 img.resize2 {
@@ -477,6 +492,8 @@ img.resize2 {
    max-width:60%;
    max-height:auto;
    float: right;
+   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 5px;
  }
 /*  6. Buttons  --------------------------------------------------------- */
 

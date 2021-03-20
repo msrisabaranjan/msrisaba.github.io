@@ -1274,7 +1274,7 @@ body1 {
    padding-top: 15px;
    padding-bottom: 15px;
    background: #112240;
-   border-radius: 3px;
+   border-radius: 5px;
    width: 420px;
    border: none;
    float: right;
@@ -1287,7 +1287,7 @@ body1 {
    padding-top: 15px;
    padding-bottom: 15px;
    background: #112240;
-   border-radius: 3px;
+   border-radius: 5px;
    width: 420px;
    border: none;
    float: left;
@@ -1507,8 +1507,8 @@ button1 {
    width: 300px;
    height: 350px;
    background:  #112240;
-   box-shadow: 0 8px 6px -6px black;
-   border-radius: 0px;
+   border-radius: 5px;
+   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  
  .lightblueText 
