@@ -256,7 +256,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    text-align: center;
    padding: 16px;
    transition: all 0.3s ease;
-   color:#116466;
+   color:#11abb0;
    font-size: 20px;
  }
  
@@ -267,7 +267,7 @@ header .scrolldown a:hover { color: #11ABB0; }
   backface-visibility: hidden;
   perspective: 1000px;
   color:#FFCB9A;
-  background-color: #116466;
+  background-color: #11abb0;
 }
 
 
@@ -292,12 +292,12 @@ header .scrolldown a:hover { color: #11ABB0; }
  
  .github {
    background: transparent;
-   color:#116466;
+   color:#11abb0;
  }
  
  .email {
    background: transparent;
-   color: #116466;
+   color: #11abb0;
  }
  
  .google {
@@ -307,7 +307,7 @@ header .scrolldown a:hover { color: #11ABB0; }
  
  .linkedin {
    background: transparent;
-   color: white;
+   color: #11abb0;
  }
  
  .youtube {
@@ -316,7 +316,7 @@ header .scrolldown a:hover { color: #11ABB0; }
  }
  .kickstarter {
    background: trans;
-   color: white;
+   color: #11abb0;
    padding-right: 75px;
  }
 
