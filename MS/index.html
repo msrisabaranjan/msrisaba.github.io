@@ -31,8 +31,15 @@
    <link rel="shortcut icon" href="favicon.png" >
    
    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  
-
+   <script src="https://unpkg.com/scrollreveal@4"></script>
+   <script>
+		ScrollReveal({ duration: 1000 })
+	</script>
+<script>
+   ScrollReveal().reveal('.headline')
+   ScrollReveal().reveal('.tagline', { delay: 500 })
+   ScrollReveal().reveal('.punchline', { delay: 2000 })
+</script>
 </head>
 
 <body>
@@ -66,28 +73,40 @@
 
       <div class="row banner">
          <div class="banner-text">
+            
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3 class="responsive-headline">Hi, my name is</h3>
-            <br>
-            <h1 class="responsive-headline">Mindan <br>Srisabaranjan.</h1>
-            <br>
-            <h2 class="responsive-headline">I analyze spatial data for the web.</h2>
-            <br>
-            <br>
-            <h4 class="responsive-headline">I'm a geospatial data analyst in the San Francisco <br>Bay Area, CA focused on data science for spatial data.<br> I work on developing web applications, analyze <br>a variety of data, and create useful visualizations.   </h4>
-            <div class="columns download">
-               <p>
-                  <br>
-                  <a href="images/Resume_MindanS.pdf" class="button" download><i class=""></i>Resume</a>
-               </p>
+            <div class= "headline">
+               <h3 class="responsive-headline">Hi, my name is</h3>
+
+               <br>
             </div>
+            <div class="tagline">
+               <h1 class="responsive-headline">Mindan <br>Srisabaranjan.</h1>
+               <br>
+            </div>
+            <div class="punchline">
+               <h2 class="responsive-headline">I analyze spatial data for the web.</h2>
+               <br>
+               <br>
+
+            </div>
+            <div class="descfinal">
+               <h4 class="responsive-headline">I'm a geospatial data analyst in the San Francisco <br>Bay Area, CA focused on data science for spatial data.<br> I work on developing web applications, analyze <br>a variety of data, and create useful visualizations.   </h4>
+               <div class="columns download">
+                  <p>
+                     <br>
+                     <a href="images/Resume_MindanS.pdf" class="button" download><i class=""></i>Resume</a>
+                  </p>
+            </div>
+                  <script>
+                     ScrollReveal({ distance: '60px' });
+                     ScrollReveal().reveal('.headline', { delay: 200 }, {origin: 'bottom'})
+                     ScrollReveal().reveal('.tagline', { delay: 600 })
+                     ScrollReveal().reveal('.punchline', { delay: 800 })
+                     ScrollReveal().reveal('.descfinal', { delay: 1000 })
+                  </script>
+            </div>
+            
             
            
          </div>
@@ -165,141 +184,148 @@
       
       <div class="row education">
 
-         <div class="twelve columns header-col">
+         <div class="journey">
+
+            <div class="twelve columns header-col">
             
-            <h4> <span class="lightblueText"> 02.</span> Journey So Far</h4>
-            <div class="skills">
-               <hr class="hr-text" data-content="Technologies">
+               <h4> <span class="lightblueText"> 02.</span> Journey So Far</h4>
+               <div class="skills">
+                  <hr class="hr-text" data-content="Technologies">
+               </div>
+               
+   
             </div>
             
-
-         </div>
-         
-
-         <div class="twelve columns header-col">
-
-             <div class="five columns header-col">
-
-               <img class="profile-pic"  src="images/Fugro_Logo2.png" alt="" />
-
-             </div>
-
-             <div class="seven columns main-col">
-
-               <div class="row item">
    
-                  <div class="twelve columns">
+            <div class="twelve columns header-col">
    
-                     <h3>Fugro</h3>
-                     <p class="info">GIS Geologist <span>&bull;</span> <em class="date">August 2020</em></p>
-                     <h7> Walnut Creek, California</h7>
+                <div class="five columns header-col">
+   
+                  <img class="profile-pic"  src="images/Fugro_Logo2.png" alt="" />
+   
+                </div>
+   
+                <div class="seven columns main-col">
+   
+                  <div class="row item">
+      
+                     <div class="twelve columns">
+      
+                        <h3>Fugro</h3>
+                        <p class="info">GIS Geologist <span>&bull;</span> <em class="date">August 2020</em></p>
+                        <h7> Walnut Creek, California</h7>
+      
+                        <p>
+                           Expanded my interest in geospatial data by developing new ways to analyze spatial information combined with geotechnical engineering. 
+                           Fugro being the leading geo-data specialist holds 30 years of vital historic seismic data of cities
+                           along with their structures worldwide.<br/><br/> My team helped develop ETL systems to access this data for the modernization
+                           of analysis. I carried out developing web applications and automation of processes to create a system that
+                           can easily be used by various large clients some being  <strong>Caltrans</strong>, <strong>Chevron</strong>, and <strong>City of San Francsico</strong>.
+          
+                        </p>
+      
+                     </div>
+      
+                  </div> <!-- item end -->
+   
+                </div>
+            </div>
+   
+            <div class="twelve columns header-col">
+   
+               <div class="five columns header-col">
+   
+                  <img class="profile-pic"  src="images/Apple_Maps.png" alt="" />
+   
+               </div>
+   
+               <div class="seven columns main-col">
+   
+                 <div class="row item">
+     
+                    <div class="twelve columns">
+     
+                     <h3>Apple</h3>
+                     <p class="info">Data Analyst via Apex Systems <span>&bull;</span> <em class="date">August 2019</em></p>
+                     <h7> Cupertino, California</h7>
    
                      <p>
-                        Expanded my interest in geospatial data by developing new ways to analyze spatial information combined with geotechnical engineering. 
-                        Fugro being the leading geo-data specialist holds 30 years of vital historic seismic data of cities
-                        along with their structures worldwide.<br/><br/> My team helped develop ETL systems to access this data for the modernization
-                        of analysis. I carried out developing web applications and automation of processes to create a system that
-                        can easily be used by various large clients some being  <strong>Caltrans</strong>, <strong>Chevron</strong>, and <strong>City of San Francsico</strong>.
-       
+                        My team deployed new land characteristics data by handling the entire data workflow from pre-processing raw data to QA for an update of Apple Maps.
+                        I helped automate and develop <strong>ETL pipelines</strong> to improve the efficiency of the process to update spatial data throughout the region. <br/><br/>As an analyst
+                        I would work on improving ML models and increase the accuracy of navigation through the application of new GIS filtering techniques. Aided in project management and training to make sure <strong>QA/QC proccesses</strong> went smoothly to meet deliverable deadlines.
+                        <br/><br/>
+                         
                      </p>
+     
+                    </div>
+     
+                 </div> <!-- item end -->
    
-                  </div>
+               </div>
+            </div>
    
-               </div> <!-- item end -->
-
-             </div>
-         </div>
-
-         <div class="twelve columns header-col">
-
-            <div class="five columns header-col">
-
-               <img class="profile-pic"  src="images/Apple_Maps.png" alt="" />
-
+            <div class="twelve columns header-col">
+   
+               <div class="five columns header-col">
+   
+                  <img class="profile-pic"  src="images/OES.png" alt="" />
+   
+               </div>
+   
+               <div class="seven columns main-col">
+   
+                 <div class="row item">
+     
+                    <div class="twelve columns">
+     
+                     <h3>OES San Diego County</h3>
+                     <p class="info">Geospatial Analyst Intern <span>&bull;</span> <em class="date">July 2018</em></p>
+                     <h7> San Diego, California</h7>
+   
+                     <p>
+                        Improved emergency response to hazardous situations by improving applications of GIS. Designed an automated demographic template that queries and displays data on a simple template; the 2 templates are currently being used during critical emergency.<br><br>Created a social outreach <strong>web maps/applications</strong> to raise community involvement in the understanding of conditions around them. These included a Twitter connected map that allows users to tweet hazards in their area so others can be notified, this was to raise community awareness within San Diego County.
+                     </p>
+                     <br></br>
+     
+                    </div>
+     
+                 </div> <!-- item end -->
+   
+               </div>
             </div>
-
-            <div class="seven columns main-col">
-
-              <div class="row item">
-  
-                 <div class="twelve columns">
-  
-                  <h3>Apple</h3>
-                  <p class="info">Data Analyst via Apex Systems <span>&bull;</span> <em class="date">August 2019</em></p>
-                  <h7> Cupertino, California</h7>
-
-                  <p>
-                     My team deployed new land characteristics data by handling the entire data workflow from pre-processing raw data to QA for an update of Apple Maps.
-                     I helped automate and develop <strong>ETL pipelines</strong> to improve the efficiency of the process to update spatial data throughout the region. <br/><br/>As an analyst
-                     I would work on improving ML models and increase the accuracy of navigation through the application of new GIS filtering techniques. Aided in project management and training to make sure <strong>QA/QC proccesses</strong> went smoothly to meet deliverable deadlines.
-                     <br/><br/>
-                      
-                  </p>
-  
-                 </div>
-  
-              </div> <!-- item end -->
-
+   
+            <div class="twelve columns header-col">
+   
+               <div class="five columns header-col">
+   
+                  <img class="giesel-hr"  src="images/museum.png" alt="" />
+   
+               </div>
+   
+               <div class="seven columns main-col">
+   
+                 <div class="row item">
+     
+                    <div class="twelve columns">
+     
+                     <h3>San Diego Archeological Center</h3>
+                     <p class="info">GIS Analyst Intern<span>&bull;</span> <em class="date">January 2018</em></p>
+                     <h7> Escondido, California</h7>
+   
+                     <p>
+                        <strong>Created federal and private geodatabases</strong> for artifacts to keep account of cultural zones within San Diego county. Created research maps that analyzed historic environmental and climate changes for tracking stemmed points to support the Kelp Highway hypothesis providing evidence for how the Americas were colonized. <br></br>Aided in improving geophysical methods for artifact retrieval and using new instruments for non-intrusive data collection. These included working with <strong>LiDAR data</strong> of archeological sites to map hidden structures by creating digital elevation models. 
+                     </p>
+     
+                    </div>
+     
+                 </div> <!-- item end -->
+   
+               </div>
             </div>
-         </div>
-
-         <div class="twelve columns header-col">
-
-            <div class="five columns header-col">
-
-               <img class="profile-pic"  src="images/OES.png" alt="" />
-
-            </div>
-
-            <div class="seven columns main-col">
-
-              <div class="row item">
-  
-                 <div class="twelve columns">
-  
-                  <h3>OES San Diego County</h3>
-                  <p class="info">Geospatial Analyst Intern <span>&bull;</span> <em class="date">July 2018</em></p>
-                  <h7> San Diego, California</h7>
-
-                  <p>
-                     Improved emergency response to hazardous situations by improving applications of GIS. Designed an automated demographic template that queries and displays data on a simple template; the 2 templates are currently being used during critical emergency.<br><br>Created a social outreach <strong>web maps/applications</strong> to raise community involvement in the understanding of conditions around them. These included a Twitter connected map that allows users to tweet hazards in their area so others can be notified, this was to raise community awareness within San Diego County.
-                  </p>
-                  <br></br>
-  
-                 </div>
-  
-              </div> <!-- item end -->
-
-            </div>
-         </div>
-
-         <div class="twelve columns header-col">
-
-            <div class="five columns header-col">
-
-               <img class="giesel-hr"  src="images/museum.png" alt="" />
-
-            </div>
-
-            <div class="seven columns main-col">
-
-              <div class="row item">
-  
-                 <div class="twelve columns">
-  
-                  <h3>San Diego Archeological Center</h3>
-                  <p class="info">GIS Analyst Intern<span>&bull;</span> <em class="date">January 2018</em></p>
-                  <h7> Escondido, California</h7>
-
-                  <p>
-                     <strong>Created federal and private geodatabases</strong> for artifacts to keep account of cultural zones within San Diego county. Created research maps that analyzed historic environmental and climate changes for tracking stemmed points to support the Kelp Highway hypothesis providing evidence for how the Americas were colonized. <br></br>Aided in improving geophysical methods for artifact retrieval and using new instruments for non-intrusive data collection. These included working with <strong>LiDAR data</strong> of archeological sites to map hidden structures by creating digital elevation models. 
-                  </p>
-  
-                 </div>
-  
-              </div> <!-- item end -->
-
-            </div>
+            <script>
+               ScrollReveal({ distance: '60px' });
+               ScrollReveal().reveal('.journey', { delay: 400 })
+            </script>
          </div>
 
          
@@ -313,42 +339,49 @@
       </div>
          
       <section id="about">
+         <div class="educations">
+            <div class="row skill">
+
+               <h1> <span class="lightblueText"> 03.</span> Education</h1>
+   
+               <div class="four columns header-col">
+                  <img class="giesel-hr"  src="images/UCSD_mod.png" alt="" />
+                  <h1>University of California San Diego</h1>
+                  <p class="info">B.S. in  Geophysics <span>&bull;</span> <em class="date">March 2017</em></p>
+                  <h7> La Jolla, California</h7>
+                  <p>
+   
+                     My time at UCSD was enlightening allowing me to expand the knowledge of two of my biggest interest which are engineering and GIS sparking new ideas that made me want to develop better exploration technology.<br></br>
+                  
+                     Attending start-up events to have long lengthy discussions about space exploration, working all night to complete a project with friends at Geisel library, and attending new research proposal lectures by my professors are all ways UCSD developed and inspired my work ethic for the future.
+                     </p>
+               </div>
+               <div class="four columns header-col">
+                  <img class="giesel-hr"  src="images/extention.png" alt="" />
+                  <h1>University of California San Diego Extention</h1>
+                  <p class="info">Certificate in Geographic Information Systems <span>&bull;</span> <em class="date">March 2017</em></p>
+                  <p>Learning GIS opened my mind to the endless applications of spatial data, it allowed me to assess current issues occurring around the world and aids in decision making to plan the best course of action to solve those issues. Above all, it opened up the opportunity to develop my interest in navigation and focus on smart city projects.
+                     </p>
+               </div>
+               <div class="four columns header-col">
+                  <img class="giesel-hr"  src="images/whccd.png" alt="" />
+                  <h1>West Hills College Lemoore</h1>
+                  <p class="info">A.S. in  Mathematics <span>&bull;</span> <em class="date">March 2012</em></p>
+                  <h7> Lemoore, California</h7>
+                  <p>Graduated with my A.S. Degree in Mathematics in my junior year of high school allowing me to dive further into my interest in STEM courses.  
+                     </p>
+               </div>
+               </div> <!-- main-col end -->
+               <script>
+                  ScrollReveal().reveal('.educations', { delay: 400 })
+               </script>
+            </div> <!-- End skills -->
+
+
+         </div>
 
          
-         <div class="row skill">
-
-            <h1> <span class="lightblueText"> 03.</span> Education</h1>
-
-            <div class="four columns header-col">
-               <img class="giesel-hr"  src="images/UCSD_mod.png" alt="" />
-               <h1>University of California San Diego</h1>
-               <p class="info">B.S. in  Geophysics <span>&bull;</span> <em class="date">March 2017</em></p>
-               <h7> La Jolla, California</h7>
-               <p>
-
-                  My time at UCSD was enlightening allowing me to expand the knowledge of two of my biggest interest which are engineering and GIS sparking new ideas that made me want to develop better exploration technology.<br></br>
-               
-                  Attending start-up events to have long lengthy discussions about space exploration, working all night to complete a project with friends at Geisel library, and attending new research proposal lectures by my professors are all ways UCSD developed and inspired my work ethic for the future.
-                  </p>
-            </div>
-            <div class="four columns header-col">
-               <img class="giesel-hr"  src="images/extention.png" alt="" />
-               <h1>University of California San Diego Extention</h1>
-               <p class="info">Certificate in Geographic Information Systems <span>&bull;</span> <em class="date">March 2017</em></p>
-               <p>Learning GIS opened my mind to the endless applications of spatial data, it allowed me to assess current issues occurring around the world and aids in decision making to plan the best course of action to solve those issues. Above all, it opened up the opportunity to develop my interest in navigation and focus on smart city projects.
-                  </p>
-            </div>
-            <div class="four columns header-col">
-               <img class="giesel-hr"  src="images/whccd.png" alt="" />
-               <h1>West Hills College Lemoore</h1>
-               <p class="info">A.S. in  Mathematics <span>&bull;</span> <em class="date">March 2012</em></p>
-               <h7> Lemoore, California</h7>
-               <p>Graduated with my A.S. Degree in Mathematics in my junior year of high school allowing me to dive further into my interest in STEM courses.  
-                  </p>
-            </div>
-			   </div> <!-- main-col end -->
-
-         </div> <!-- End skills -->
+         
       </section>
    </section> <!-- Resume Section End-->
 
@@ -366,13 +399,16 @@
             <div class="twelve columns header-col">
 
                <div class="container1">
-                  <div class="images">
-                    <img class="resize" src="images/Capture2323.png" alt=""/>
+                  <div class="hover08">
+                     <div class="images">
+                        <figure><img class="resize" src="images/Capture2323.png" alt=""/> </figure>
+                      </div>
                   </div>
+                  
                   <div class="product1">
                     <p111>Project: In Progress</p111>
                     <br>
-                    <h11>DeTour Routing</h11>
+                    <h11><a1>DeTour Routing</a1></h11>
                     <br>
                     <br>
                     <div id="theDiv">
@@ -400,13 +436,16 @@
                <br>
                
                   <div class="container1">
-                     <div class="images">
-                       <img class="resize2" src="images/wildfire.png" alt=""/>
+                     <div class="hover08">
+                        <div class="images">
+                           <figure><img class="resize2" src="images/wildfire.png" alt=""/></figure>
+                         </div>
                      </div>
+                     
                      <div class="product12">
                        <p111>OES</p111>
                        <br>
-                       <h11>Wildfire Hazard Evac Tool</h11>
+                       <h11><a1>Wildfire Hazard Tool</a1></h11>
                        <br>
                        <br>
                        <div id="theDiv2">
@@ -441,17 +480,20 @@
                         <div class="twelve columns header-col">
             
                            <div class="container1">
-                              <div class="images">
-                                <img class="resize" src="images/Seds.jpg" alt=""/>
+                              <div class="hover08">
+                                 <div class="images">
+                                    <figure><img class="resize" src="images/Seds.jpg" alt=""/></figure>
+                                  </div>
                               </div>
+                              
                               <div class="product1">
                                 <p111>SEDS</p111>
                                 <br>
-                                <h11>Vulcan-1 3D Printed Rockect Engine</h11>
+                                <h11><a1>3D Printed Rockect Engine</a1></h11>
                                 <br>
                                 <br>
                                 <div id="theDiv">
-                                 <p111 class="desc1">  Aided in developing the static fire system electronic control system to be able to monitor sensor data, system controls, and process data collected to see if the 3D printed rocket performed identical successfully to non-3D printed engines.</p111>
+                                 <p111 class="desc1">  Aided in developing the static fire electronic control system to be able to monitor sensor data collected to see if the 3D printed rocket performed identical successfully to non-3D printed engines.</p111>
                                 </div>
                                 <br>
                                 <h21>Arduino &nbsp; &nbsp; &nbsp;C++ &nbsp; &nbsp; &nbsp;Python</h21>
@@ -586,7 +628,11 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-
+ <script>  
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }; 
+ </script>
 </body>
 
 </html>
