@@ -8,7 +8,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Mindan Srisabaranjan</title>
-	<meta name="description" content="">
+	<meta name="description" content="images/thumbn.jpg">
 	<meta name="author" content="">
 
    <!-- Mobile Specific Metas
@@ -57,10 +57,10 @@
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home"><span class="lightblueText"> 01. </span>About</a></li>
-            <li><a class="smoothscroll" href="#resume"><span class="lightblueText"> 02. </span> Experiance</a></li>
-	         <li><a class="smoothscroll" href="#about"><span class="lightblueText"> 03. </span>Education</a></li>
-            <li><a class="smoothscroll" href="#portfolio"><span class="lightblueText"> 04. </span>Works</a></li>
+            <li class="current first"><a class="smoothscroll" href="#home"><span class="lightblueText"> 01. </span>About</a></li>
+            <li><a class="smoothscroll second" href="#resume"><span class="lightblueText"> 02. </span> Experiance</a></li>
+	         <li><a class="smoothscroll third" href="#about"><span class="lightblueText"> 03. </span>Education</a></li>
+            <li><a class="smoothscroll fourth" href="#portfolio"><span class="lightblueText"> 04. </span>Works</a></li>
             <div class="columns download">
                <p>
                   <br>
@@ -68,7 +68,13 @@
                </p>
             </div>
          </ul> <!-- end #nav -->
-
+         <script>
+            ScrollReveal({ distance: '10px' });
+            ScrollReveal().reveal('.first', { delay: 200 }, {origin: 'top'});
+            ScrollReveal().reveal('.second', { delay: 500 });
+            ScrollReveal().reveal('.third', { delay: 800 });
+            ScrollReveal().reveal('.fourth', { delay: 1100 });
+         </script>
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
@@ -100,10 +106,10 @@
             </div>
                   <script>
                      ScrollReveal({ distance: '60px' });
-                     ScrollReveal().reveal('.headline', { delay: 200 }, {origin: 'bottom'})
-                     ScrollReveal().reveal('.tagline', { delay: 600 })
-                     ScrollReveal().reveal('.punchline', { delay: 800 })
-                     ScrollReveal().reveal('.descfinal', { delay: 1000 })
+                     ScrollReveal().reveal('.headline', { delay: 1000 }, {origin: 'bottom'});
+                     ScrollReveal().reveal('.tagline', { delay: 1400 });
+                     ScrollReveal().reveal('.punchline', { delay: 1600 });
+                     ScrollReveal().reveal('.descfinal', { delay: 1800 });
                   </script>
             </div>
             
@@ -324,7 +330,7 @@
             </div>
             <script>
                ScrollReveal({ distance: '60px' });
-               ScrollReveal().reveal('.journey', { delay: 400 })
+               ScrollReveal().reveal('.journey', { delay: 400 });
             </script>
          </div>
 
@@ -373,7 +379,7 @@
                </div>
                </div> <!-- main-col end -->
                <script>
-                  ScrollReveal().reveal('.educations', { delay: 400 })
+                  ScrollReveal().reveal('.educations', { delay: 400 });
                </script>
             </div> <!-- End skills -->
 
@@ -394,18 +400,29 @@
 
          <div class="twelve columns collapsed">
 
-            <h1> <span class="lightblueText"> 04.</span> <span class="tanText">Projects I've Built</span></h1>
-            <h2>Some of my interests and projects I have enjoyed working on. My interest includes engineering, GIS, and data science. Take a look at some of my works through the years.</h2>
+            <h1 class="title"> <span class="lightblueText"> 04.</span> <span class="tanText">Projects I've Built</span></h1>
+            <h2 class="subtitle">Some of my interests and projects I have enjoyed working on. My interest includes engineering, GIS, and data science. Take a look at some of my works through the years.</h2>
+            <script>
+               ScrollReveal({ distance: '10px' });
+               ScrollReveal().reveal('.title', { delay: 200 }, {origin: 'bottom'});
+               ScrollReveal().reveal('.subtitle', { delay: 500 });
+               
+            </script>
             <div class="twelve columns header-col">
 
                <div class="container1">
                   <div class="hover08">
-                     <div class="images">
+                     <div class="images pic1">
                         <figure><img class="resize" src="images/Capture2323.png" alt=""/> </figure>
                       </div>
+                      <script>
+                        ScrollReveal({ distance: '100px' });
+                        ScrollReveal().reveal('.pic1', { delay: 600 }, {origin: 'left'});
+                        
+                     </script>
                   </div>
                   
-                  <div class="product1">
+                  <div class="product1 subdesc1">
                     <p111>Project: In Progress</p111>
                     <br>
                     <h11><a1>DeTour Routing</a1></h11>
@@ -424,6 +441,11 @@
                       <button class="like1"><span>♥</span></button>
                     </div>
                     -->
+                    <script>
+                     ScrollReveal({ distance: '100px' });
+                     ScrollReveal().reveal('.subdesc1', { delay: 600 }, {origin: 'left'});
+                     
+                     </script>
                   </div>
                 </div>
                 
@@ -436,13 +458,18 @@
                <br>
                
                   <div class="container1">
-                     <div class="hover08">
+                     <div class="hover08 pic2">
                         <div class="images">
                            <figure><img class="resize2" src="images/wildfire.png" alt=""/></figure>
                          </div>
+                         <script>
+                           ScrollReveal({ distance: '100px' });
+                           ScrollReveal().reveal('.pic2', { delay: 600 }, {origin: 'left'});
+                           
+                           </script>
                      </div>
                      
-                     <div class="product12">
+                     <div class="product12 subdesc2">
                        <p111>OES</p111>
                        <br>
                        <h11><a1>Wildfire Hazard Tool</a1></h11>
@@ -461,6 +488,11 @@
                          <button class="like1"><span>♥</span></button>
                        </div>
                        -->
+                       <script>
+                        ScrollReveal({ distance: '100px' });
+                        ScrollReveal().reveal('.subdesc2', { delay: 600 }, {origin: 'left'});
+                        
+                        </script>
                      </div>
                    </div>
                    
