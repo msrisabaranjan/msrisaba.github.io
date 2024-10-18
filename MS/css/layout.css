@@ -326,7 +326,7 @@ header .scrolldown a:hover { color: #11ABB0; }
  }
 
 .highlight {
-   background-color: #FFCB9A; /* Light yellow */
+   background-color: #1a1a1a; /* Light yellow */
    padding: 0 4px;
    border-radius: 3px;
    animation: highlightFadeIn 2s ease-in-out;
