@@ -325,6 +325,23 @@ header .scrolldown a:hover { color: #11ABB0; }
    padding-right: 75px;
  }
 
+.highlight {
+   background-color: #FFCB9A; /* Light yellow */
+   padding: 0 4px;
+   border-radius: 3px;
+   animation: highlightFadeIn 2s ease-in-out;
+}
+
+@keyframes highlightFadeIn {
+   0% {
+      background-color: transparent;
+   }
+   100% {
+      background-color: #FFCB9A;
+   }
+}
+
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
