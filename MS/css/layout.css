@@ -95,6 +95,24 @@ body { background: #0f0f0f; }
      height: 0%;
    }
  }
+
+/* Adjust the background size and header height for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+   header {
+      height: 100vh; /* Ensure the header fills the viewport height */
+      background-position: center center; /* Keep the background centered */
+      background-size: cover; /* Ensure the background covers the screen */
+   }
+
+   /* Adjust font sizes for mobile */
+   header .banner-text h1, 
+   header .banner-text h2, 
+   header .banner-text h3, 
+   header .banner-text h4 {
+      font-size: 4vw; /* Relative font sizes for smaller screens */
+   }
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
